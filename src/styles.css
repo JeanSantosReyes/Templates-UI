@@ -1,56 +1,27 @@
-body {
-  margin: 0;
-  font-family: 'Roboto', sans-serif;
+/* -------------------SCROLLBAR DEL NAVEGADOR---------------------- */
+
+/* width */
+::-webkit-scrollbar {
+  width: 5px;
 }
 
-.App {
-  width: 100vw;
-  height: 100vh;
-  display: flex;
-  flex-direction: column;
-  text-align: center;
-  justify-content: center;
+/* Track - Fondo */
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
 }
 
-.logo {
-  max-width: 100px;
-  margin-top: 15px;
+/* Handle - Barra */
+::-webkit-scrollbar-thumb {
+  background: #888;
+  border-radius: 10px;
 }
 
-.main-layout {
-  display: flex;
-  flex-direction: row;
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
 }
 
-nav {
-  background-color: #363a45;
-  height: 100vh;
-  margin-right: 15px;
-  /* overflow-y: scroll; */
-  text-align: center;
-  width: 250px;
-}
-
-nav ul {
-  align-items: center;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  padding-left: 0;
-}
-
-nav li {
-  list-style: none;
-  margin-bottom: 10px;
-}
-
-nav li a {
-  color: white;
-  font-size: 1.2rem;
-  text-decoration: none;
-}
-
-.nav-active {
-  color: grey;
-  transition: all .3s ease-out;
+/* Handle on active - Click en la barra */
+::-webkit-scrollbar-thumb:active {
+  background-color: #1d1c1c;
 }
