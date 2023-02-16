@@ -1,7 +1,10 @@
 import { AppRouter } from "./router/AppRouter"
+import { AppTheme } from "./theme/AppTheme"
 
 export const App = () => {
   return (
-    <AppRouter />
+    <AppTheme>
+      <AppRouter />
+    </AppTheme>
   )
 }
